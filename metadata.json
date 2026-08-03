@@ -1,0 +1,8 @@
+{
+  "name": "Pest Control",
+  "description": "Eco-friendly non-fumigation pest control and handyman services in Durban, featuring online booking, pest guide blog, and live AI support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

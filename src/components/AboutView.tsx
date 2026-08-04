@@ -133,9 +133,9 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenBooking }) => {
 
             <div className="p-6 bg-emerald-900 rounded-2xl border-2 border-emerald-500 shadow-xl space-y-2">
               <Award className="w-8 h-8 text-amber-300 mb-2" />
-              <h3 className="text-xs font-black text-emerald-200 uppercase">Licensing & VAT</h3>
-              <p className="text-sm font-black text-white">VAT: {BUSINESS_INFO.vatNumber}</p>
-              <p className="text-xs text-emerald-200">Dept. of Agriculture Licensed</p>
+              <h3 className="text-xs font-black text-emerald-200 uppercase">Licensing</h3>
+              <p className="text-sm font-black text-white">Licence No: P36112</p>
+              <p className="text-xs text-emerald-200">P36112 Dept. of Agriculture Licensed</p>
             </div>
 
             <div className="p-6 bg-emerald-900 rounded-2xl border-2 border-emerald-500 shadow-xl space-y-2">

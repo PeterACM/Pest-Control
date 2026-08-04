@@ -6,17 +6,16 @@ export const BUSINESS_INFO = {
   founder: "Grant Arnold",
   legalForm: "Close Corporation (CC)",
   regNumber: "B2011063958",
-  vatNumber: "9365327171",
   incorporatedYear: "2011",
   address: "24 Kensington Gardens, Umbilo, Durban, 4001, KwaZulu-Natal",
-  phone: "082 798 6705",
-  landline: "031 205 4890",
-  email: "grant@pestfreeservices.co.za",
+  phone: "031 205 3371",
+  landline: "031 205 3371",
+  email: "pestfreeservice@gmail.com",
   hours: "Mon - Sat: 07:30 - 17:30 | Emergency Response Available",
   stats: {
     yearsInBusiness: "14+",
     householdsServed: "650+",
-    licensing: "Dept. of Agriculture Licensed",
+    licensing: "P36112 Dept. of Agriculture Licensed",
     specialty: "Targeted Roach Gel Control"
   }
 };

@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-red-700 hover:bg-red-800 border border-red-600 shadow-md transition-all"
           >
             <Phone className="w-4 h-4 text-white animate-bounce" />
-            <span>Call Grant ({BUSINESS_INFO.phone})</span>
+            <span>Call Us ({BUSINESS_INFO.phone})</span>
           </a>
         </div>
 
@@ -164,7 +164,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-extrabold text-white bg-red-700 hover:bg-red-800 shadow-md"
             >
               <Phone className="w-4 h-4" />
-              <span>Call Grant Directly ({BUSINESS_INFO.phone})</span>
+              <span>Call Us Directly ({BUSINESS_INFO.phone})</span>
             </a>
           </div>
         </div>

@@ -53,8 +53,7 @@ export const Footer: React.FC<FooterProps> = () => {
               Business Registration & Licence
             </h4>
             <p><strong className="text-white">Close Corp Reg:</strong> {BUSINESS_INFO.regNumber}</p>
-            <p><strong className="text-white">VAT Reg:</strong> {BUSINESS_INFO.vatNumber}</p>
-            <p><strong className="text-white">Licence / Verification:</strong> UKZN Entomologist Certified (2012)</p>
+            <p><strong className="text-white">Licence:</strong> P36112 Department of Agriculture Licensed</p>
           </div>
 
         </div>

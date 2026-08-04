@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigateToServices,
             {/* Pill badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-700 text-white text-xs font-black tracking-wider uppercase shadow-md border border-red-500">
               <ShieldCheck className="w-4 h-4 text-emerald-300" />
-              <span>DURBAN PEST CONTROL SPECIALISTS • LICENSED WITH DEPT. OF AGRICULTURE</span>
+              <span>DURBAN PEST CONTROL SPECIALISTS • P36112 DEPT. OF AGRICULTURE LICENSED</span>
             </div>
 
             {/* Main Headline */}
@@ -180,7 +180,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigateToServices,
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-xs font-black text-slate-900">Licensed with Dept. of Agriculture</p>
+                  <p className="text-xs font-black text-slate-900">P36112 Dept. of Agriculture Licensed</p>
                   <p className="text-[11px] text-emerald-800 font-bold">Compulsory Registered Chemicals</p>
                 </div>
               </div>

@@ -393,13 +393,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, pre
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">Cell Phone Number *</label>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
                   <input
                     type="tel"
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g. 082 798 6705"
+                    placeholder="e.g. 031 205 3371"
                     className="w-full p-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-emerald-500 font-semibold"
                   />
                 </div>

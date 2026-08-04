@@ -102,11 +102,10 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenBooking }) => {
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-amber-300 shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-white block font-black uppercase text-[11px]">Mobile & Landline</strong>
-                      <a href={`tel:${BUSINESS_INFO.phone.replace(/\s+/g, '')}`} className="hover:text-amber-300 font-bold block text-sm">
-                        Cell: {BUSINESS_INFO.phone}
+                      <strong className="text-white block font-black uppercase text-[11px]">Landline Phone</strong>
+                      <a href={`tel:${BUSINESS_INFO.landline.replace(/\s+/g, '')}`} className="hover:text-amber-300 font-bold block text-sm">
+                        Tel: {BUSINESS_INFO.landline}
                       </a>
-                      <span className="text-emerald-200">Tel: {BUSINESS_INFO.landline}</span>
                     </div>
                   </div>
 
@@ -132,8 +131,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenBooking }) => {
                 <div className="p-4 bg-slate-950 text-emerald-100 rounded-2xl border border-emerald-600 text-xs space-y-1">
                   <p className="font-black text-white">{BUSINESS_INFO.name}</p>
                   <p className="text-emerald-300">Close Corp Reg: {BUSINESS_INFO.regNumber}</p>
-                  <p className="text-emerald-300">VAT Registration: {BUSINESS_INFO.vatNumber}</p>
-                  <p className="text-amber-300">Licensed with Dept. of Agriculture</p>
+                  <p className="text-amber-300">P36112 Department of Agriculture Licensed</p>
                 </div>
               </div>
             </div>
@@ -178,13 +176,13 @@ export const ContactView: React.FC<ContactViewProps> = ({ onOpenBooking }) => {
                       </div>
 
                       <div>
-                        <label className="block text-slate-900 mb-1">Cell Phone Number *</label>
+                        <label className="block text-slate-900 mb-1">Phone Number *</label>
                         <input
                           type="tel"
                           required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="e.g. 082 798 6705"
+                          placeholder="e.g. 031 205 3371"
                           className="w-full p-3 rounded-xl border-2 border-emerald-300 focus:ring-2 focus:ring-red-500 text-sm font-semibold"
                         />
                       </div>

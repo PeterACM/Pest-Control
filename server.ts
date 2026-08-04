@@ -33,16 +33,17 @@ app.post("/api/chat", async (req, res) => {
     }
 
     const systemInstruction = `You are representing Pest Free Services (trading as Grant's Pest Free Services) in Durban, South Africa.
-Your company offers licensed pest control and sub-contracted timber repairs across greater Durban (Umbilo, Morningside, North Beach, Umhlanga, Westville, Musgrave, etc.).
+Your company offers P36112 Department of Agriculture licensed pest control and sub-contracted timber repairs across greater Durban (Umbilo, Morningside, North Beach, Umhlanga, Westville, Musgrave, etc.).
 Key company highlights:
+- Licensing: P36112 Department of Agriculture licensed.
 - Specialty: Wood-borer and termite treatment using products registered with the Department of Agriculture as an effective alternative to fumigation. An initial on-site property assessment is compulsory to determine timber accessibility.
 - 14+ years in business (since April 2011), served 650+ Durban households.
 - Broad pest coverage: Wood-borer, cockroaches (gel baiting + cleanliness partnership), ants, bed bugs, dust mites, mosquitoes, snake relocation, gecko control.
 - Timber Repairs: We dispatch trusted sub-contractors for roof, door, window, and floor timber replacement.
-- Business Details: CC Reg B2011063958, VAT No 9365327171, Address: 24 Kensington Gardens, Umbilo, Durban, 4001. Main Contact Number: 0827986705.
+- Business Details: CC Reg B2011063958, Address: 24 Kensington Gardens, Umbilo, Durban, 4001. Landline: 031 205 3371, Email: pestfreeservice@gmail.com.
 
 Your tone should be warm, friendly, authoritative, reassuring, professional, and uniquely Durban-focused.
-Answer user questions concisely, emphasize that an initial on-site property assessment is compulsory, explain pricing requires an assessment, and encourage users to use the online booking system to request an assessment or call 0827986705.`;
+Answer user questions concisely, emphasize that an initial on-site property assessment is compulsory, explain pricing requires an assessment, and encourage users to use the online booking system to request an assessment, call 031 205 3371, or email pestfreeservice@gmail.com.`;
 
     if (process.env.GEMINI_API_KEY) {
       try {
@@ -77,7 +78,7 @@ Answer user questions concisely, emphasize that an initial on-site property asse
     } else if (msgLower.includes("quote") || msgLower.includes("cost") || msgLower.includes("price") || msgLower.includes("free")) {
       fallbackReply += "We do not offer free quotes over the phone as treatments vary by property structure. An on-site property assessment is necessary. You can use our online form right here to request an assessment!";
     } else if (msgLower.includes("snake") || msgLower.includes("emergency")) {
-      fallbackReply += "For urgent snake or gecko control in Durban, please keep a safe distance and call us directly at 082 798 6705 or request an urgent slot on our booking page.";
+      fallbackReply += "For urgent snake or gecko control in Durban, please keep a safe distance and call us directly at 031 205 3371 or request an urgent slot on our booking page.";
     } else {
       fallbackReply += "We cover wood-borer, cockroaches, ants, bed bugs, dust mites, mosquitoes, snakes, geckos, and sub-contracted timber repairs across Durban. How can we assist you today?";
     }

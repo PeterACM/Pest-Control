@@ -1,0 +1,10 @@
+{
+  "name": "pest-control",
+  "compatibility_date": "2026-08-01",
+  "main": "worker.ts",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS"
+  }
+}

@@ -22,7 +22,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenBooking }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
           <span className="text-xs font-black text-white bg-red-700 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-md">
-            About Pest Free Services CC
+            About Grant Pest Free Services
           </span>
           <h1 className="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
             Professional Pest Control & Assessment Standards
@@ -121,7 +121,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenBooking }) => {
               <Building2 className="w-8 h-8 text-amber-300 mb-2" />
               <h3 className="text-xs font-black text-emerald-200 uppercase">Registered Name</h3>
               <p className="text-sm font-black text-white">{BUSINESS_INFO.name}</p>
-              <p className="text-xs text-emerald-200">Close Corporation (CC)</p>
+              <p className="text-xs text-emerald-200">Private Corporation (Pty)</p>
             </div>
 
             <div className="p-6 bg-emerald-900 rounded-2xl border-2 border-emerald-500 shadow-xl space-y-2">

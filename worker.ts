@@ -69,7 +69,8 @@ export default {
         `<h2>New Contact Inquiry</h2>
          <p><strong>Name:</strong> ${contact.name || 'N/A'}</p>
          <p><strong>Email:</strong> ${contact.email || 'N/A'}</p>
-         <p><strong>Phone:</strong> ${contact.phone || 'N/A'}</p>
+          <p><strong>Suburb:</strong> ${contact.suburb || 'N/A'}</p>
+          <p><strong>Phone:</strong> ${contact.phone || 'N/A'}</p>
          <p><strong>Message:</strong> ${contact.message || 'N/A'}</p>`,
         contact.email
       );

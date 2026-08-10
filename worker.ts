@@ -27,17 +27,25 @@ export default {
     if (request.method === 'POST' && url.pathname === '/api/bookings') {
       const booking: any = await request.json();
       const reference = `PFS-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
+      const urgentTag = booking.urgent ? ' 🚨 URGENT' : '';
 
       const emailRes = await sendEmail(
         env,
-        `New Booking Request — Ref ${reference}`,
-        `<h2>New Booking Request</h2>
+        `New Booking Request — Ref ${reference}${urgentTag}`,
+        `<h2>New Booking Request${urgentTag}</h2>
          <p><strong>Reference:</strong> ${reference}</p>
-         <p><strong>Name:</strong> ${booking.name || 'N/A'}</p>
+         <p><strong>Service Requested:</strong> ${booking.pestType || 'N/A'}</p>
+         <p><strong>Property Type:</strong> ${booking.propertyType || 'N/A'}</p>
+         <p><strong>Property Size:</strong> ${booking.propertySize || 'N/A'}</p>
+         <p><strong>Suburb:</strong> ${booking.suburb || 'N/A'}</p>
+         <p><strong>Preferred Date:</strong> ${booking.preferredDate || 'N/A'}</p>
+         <p><strong>Preferred Time:</strong> ${booking.preferredTime || 'N/A'}</p>
+         <hr/>
+         <p><strong>Full Name:</strong> ${booking.fullName || 'N/A'}</p>
          <p><strong>Email:</strong> ${booking.email || 'N/A'}</p>
          <p><strong>Phone:</strong> ${booking.phone || 'N/A'}</p>
-         <p><strong>Address:</strong> ${booking.address || 'N/A'}</p>
-         <p><strong>Message:</strong> ${booking.message || 'N/A'}</p>`,
+         <p><strong>Street Address:</strong> ${booking.address || 'N/A'}</p>
+         <p><strong>Special Notes:</strong> ${booking.specialNotes || 'None'}</p>`,
         booking.email
       );
 

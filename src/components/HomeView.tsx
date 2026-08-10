@@ -97,7 +97,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   </td>
                   <td className="p-4 bg-slate-50 text-slate-800 font-extrabold flex items-center gap-2">
                     <AlertTriangle className="w-5 h-5 text-slate-600 shrink-0" />
-                    Full 3 to 5 Days Evacuation under Tents
+                    Full 1 to 2 Days Evacuation under Tents
                   </td>
                 </tr>
                 <tr className="hover:bg-emerald-50/50">

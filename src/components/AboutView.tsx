@@ -120,7 +120,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenBooking }) => {
             <div className="p-6 bg-emerald-900 rounded-2xl border-2 border-emerald-500 shadow-xl space-y-2">
               <Building2 className="w-8 h-8 text-amber-300 mb-2" />
               <h3 className="text-xs font-black text-emerald-200 uppercase">Registered Name</h3>
-              <p className="text-sm font-black text-white">{BUSINESS_INFO.name}</p>
+              <p className="text-sm font-black text-white">Grant Pest Free Services</p>
               <p className="text-xs text-emerald-200">Private Corporation (Pty)</p>
             </div>
 

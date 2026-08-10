@@ -12,7 +12,7 @@ async function sendEmail(env: Env, subject: string, html: string, replyTo?: stri
     },
     body: JSON.stringify({
       from: 'Pest Free Services <noreply@pestfreeservices.co.za>',
-      to: 'petemkhize@gmail.com',
+      to: 'pestfreeservices@gmail.com',
       subject,
       reply_to: replyTo || undefined,
       html

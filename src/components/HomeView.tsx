@@ -4,7 +4,7 @@ import { Hero } from './Hero';
 import { SERVICES_DATA, TESTIMONIALS_DATA, BLOG_ARTICLES, BUSINESS_INFO } from '../data/pestData';
 import { PageView } from '../types';
 import { ShieldAlert, Bug, Footprints, Bed, Sparkles, Wind, ShieldCheck, Wrench, CheckCircle2, XCircle, ArrowRight, Award, PhoneCall, Star, FileText, Calendar, AlertTriangle } from 'lucide-react';
-import grantArnoldFounderImg from '../assets/images/grant_arnold_founder_1784765744784.jpg';
+import grantArnoldFounderImg from 'Wood borer1.png';
 
 interface HomeViewProps {
   onNavigate: (page: PageView) => void;

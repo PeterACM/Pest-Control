@@ -78,62 +78,82 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200 text-xs sm:text-sm font-semibold">
-                <tr className="hover:bg-emerald-50/50">
-                  <td className="p-4 font-extrabold text-slate-900">Initial Assessment Requirement</td>
-                  <td className="p-4 bg-emerald-100 text-emerald-950 font-black flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-                    Compulsory On-Site Inspection (Checks accessibility of timber)
-                  </td>
-                  <td className="p-4 bg-slate-50 text-slate-800 font-bold flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
-                    Referred if timber is inside sealed inaccessible gaps
-                  </td>
-                </tr>
-                <tr className="hover:bg-emerald-50/50">
-                  <td className="p-4 font-extrabold text-slate-900">Evacuation Guidelines</td>
-                  <td className="p-4 bg-emerald-100 text-emerald-950 font-black flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-                    Part Evacuation may be required during application
-                  </td>
-                  <td className="p-4 bg-slate-50 text-slate-800 font-extrabold flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-slate-600 shrink-0" />
-                    Full 1 to 2 Days Evacuation under Tents
-                  </td>
-                </tr>
-                <tr className="hover:bg-emerald-50/50">
-                  <td className="p-4 font-extrabold text-slate-900">Licensing & Chemicals</td>
-                  <td className="p-4 bg-emerald-100 text-emerald-950 font-black flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-                    Licensed Products (Dept. of Agriculture Registered)
-                  </td>
-                  <td className="p-4 bg-slate-50 text-slate-700 flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-slate-500 shrink-0" />
-                    Registered Fumigant Gases
-                  </td>
-                </tr>
-                <tr className="hover:bg-emerald-50/50">
-                  <td className="p-4 font-extrabold text-slate-900">Cockroach Control Approach</td>
-                  <td className="p-4 bg-emerald-100 text-emerald-950 font-black flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-                    Targeted Gel Baiting + Client Cleanliness Partnership
-                  </td>
-                  <td className="p-4 bg-slate-50 text-slate-700 flex items-center gap-2">
-                    <XCircle className="w-5 h-5 text-slate-400 shrink-0" />
-                    Standard spray without sanitation partnership
-                  </td>
-                </tr>
-                <tr className="hover:bg-emerald-50/50">
-                  <td className="p-4 font-extrabold text-slate-900">Wood Replacement & Timber Repairs</td>
-                  <td className="p-4 bg-emerald-100 text-emerald-950 font-black flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
-                    Dispatched Trusted Sub-Contractors (Roofs, doors, windows, floors)
-                  </td>
-                  <td className="p-4 bg-slate-50 text-slate-700 flex items-center gap-2">
-                    <XCircle className="w-5 h-5 text-slate-400 shrink-0" />
-                    No timber repair sub-contractors dispatched
-                  </td>
-                </tr>
-              </tbody>
+  <tr className="hover:bg-emerald-50/50">
+    <td className="p-4 font-extrabold text-slate-900">Initial Assessment Requirement</td>
+    <td className="p-4 bg-emerald-100 text-emerald-950 font-black">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
+        Compulsory On-Site Inspection (Checks accessibility of timber)
+      </span>
+    </td>
+    <td className="p-4 bg-slate-50 text-slate-800 font-bold">
+      <span className="flex items-center gap-2">
+        <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
+        Referred if timber is inside sealed inaccessible gaps
+      </span>
+    </td>
+  </tr>
+  <tr className="hover:bg-emerald-50/50">
+    <td className="p-4 font-extrabold text-slate-900">Evacuation Guidelines</td>
+    <td className="p-4 bg-emerald-100 text-emerald-950 font-black">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
+        Part Evacuation may be required during application
+      </span>
+    </td>
+    <td className="p-4 bg-slate-50 text-slate-800 font-extrabold">
+      <span className="flex items-center gap-2">
+        <AlertTriangle className="w-5 h-5 text-slate-600 shrink-0" />
+        Full 1 to 2 Days Evacuation under Tents
+      </span>
+    </td>
+  </tr>
+  <tr className="hover:bg-emerald-50/50">
+    <td className="p-4 font-extrabold text-slate-900">Licensing & Chemicals</td>
+    <td className="p-4 bg-emerald-100 text-emerald-950 font-black">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
+        Licensed Products (Dept. of Agriculture Registered)
+      </span>
+    </td>
+    <td className="p-4 bg-slate-50 text-slate-700">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-slate-500 shrink-0" />
+        Registered Fumigant Gases
+      </span>
+    </td>
+  </tr>
+  <tr className="hover:bg-emerald-50/50">
+    <td className="p-4 font-extrabold text-slate-900">Cockroach Control Approach</td>
+    <td className="p-4 bg-emerald-100 text-emerald-950 font-black">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
+        Targeted Gel Baiting + Client Cleanliness Partnership
+      </span>
+    </td>
+    <td className="p-4 bg-slate-50 text-slate-700">
+      <span className="flex items-center gap-2">
+        <XCircle className="w-5 h-5 text-slate-400 shrink-0" />
+        Standard spray without sanitation partnership
+      </span>
+    </td>
+  </tr>
+  <tr className="hover:bg-emerald-50/50">
+    <td className="p-4 font-extrabold text-slate-900">Wood Replacement & Timber Repairs</td>
+    <td className="p-4 bg-emerald-100 text-emerald-950 font-black">
+      <span className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-emerald-700 shrink-0" />
+        Dispatched Trusted Sub-Contractors (Roofs, doors, windows, floors)
+      </span>
+    </td>
+    <td className="p-4 bg-slate-50 text-slate-700">
+      <span className="flex items-center gap-2">
+        <XCircle className="w-5 h-5 text-slate-400 shrink-0" />
+        No timber repair sub-contractors dispatched
+      </span>
+    </td>
+  </tr>
+</tbody>
             </table>
           </div>
         </div>

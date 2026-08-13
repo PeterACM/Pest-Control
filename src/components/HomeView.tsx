@@ -240,7 +240,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     const target = e.currentTarget as HTMLImageElement;
                     if (!target.dataset.triedFallback) {
                       target.dataset.triedFallback = 'true';
-                      target.src = '/grant_arnold_founder_1784765744784.jpg';
+                      target.src = '/Wood borer1.png';
                     }
                   }}
                 />

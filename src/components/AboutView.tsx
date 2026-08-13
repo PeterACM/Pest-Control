@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { BUSINESS_INFO } from '../data/pestData';
 import { ShieldCheck, Award, Users, CheckCircle2, MapPin, Building2, FileText, PhoneCall, Sparkles, Wrench } from 'lucide-react';
-import woodBorerTreatmentImg from '../assets/images/wood_borer_treatment_1784765757008.jpg';
+import woodBorerTreatmentImg from '../assets/images/Wood borer4.png';
 
 interface AboutViewProps {
   onOpenBooking: () => void;
@@ -55,7 +55,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenBooking }) => {
                     const target = e.currentTarget as HTMLImageElement;
                     if (!target.dataset.triedFallback) {
                       target.dataset.triedFallback = 'true';
-                      target.src = '/wood_borer_treatment_1784765757008.jpg';
+                      target.src = '/Wood borer4.png';
                     }
                   }}
                 />

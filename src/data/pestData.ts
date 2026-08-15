@@ -11,7 +11,7 @@ export const BUSINESS_INFO = {
   phone: "031 205 3371",
   landline: "031 205 3371",
   mobile: "082 798 6705",
-  email: "pestfreeservice@gmail.com",
+  email: "pestfreeservice.grant@gmail.com",
   hours: "Mon - Sat: 07:30 - 17:30 | Emergency Response Available",
   stats: {
     yearsInBusiness: "14+",

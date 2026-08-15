@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageView } from '../types';
 import { BUSINESS_INFO } from '../data/pestData';
-import { MapPin, ShieldCheck } from 'lucide-react';
+import { MapPin, ShieldCheck, Facebook } from 'lucide-react';
 import pestLogo from '../assets/images/pest.png';
 
 interface FooterProps {

@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = () => {
       }
     }}
   />
-  
+  <a
     href="https://www.facebook.com/PestFreeServices"
     target="_blank"
     rel="noopener noreferrer"

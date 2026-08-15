@@ -35,6 +35,15 @@ export const Footer: React.FC<FooterProps> = () => {
                 }
               }}
             />
+
+            href="https://www.facebook.com/YOUR_PAGE_NAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit our Facebook page"
+    className="flex items-center justify-center h-11 w-11 rounded-full bg-emerald-900 hover:bg-emerald-700 border border-emerald-500 transition-colors"
+  >
+      <Facebook className="w-5 h-5 text-white" />
+            </a>
           </div>
 
           {/* Location Section */}

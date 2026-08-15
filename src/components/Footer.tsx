@@ -68,9 +68,20 @@ export const Footer: React.FC<FooterProps> = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-6 text-center text-xs text-slate-400 font-medium">
-          <p>© {new Date().getFullYear()} Grant's Pest Free Services CC. All rights reserved. Durban, KwaZulu-Natal.</p>
-        </div>
+        {/* Bottom Copyright */}
+<div className="pt-6 text-center text-xs text-slate-400 font-medium space-y-2">
+  <p>© {new Date().getFullYear()} Grant's Pest Free Services CC. All rights reserved. Durban, KwaZulu-Natal.</p>
+  <p>
+    <a
+      href="https://wa.me/YOUR_NUMBER?text=Hi%20Peter%2C%20please%20can%20you%20build%20my%20website"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-emerald-400 hover:text-amber-300 transition-colors"
+    >
+      Designed by Peter
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );

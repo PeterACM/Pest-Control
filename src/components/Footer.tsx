@@ -16,35 +16,35 @@ export const Footer: React.FC<FooterProps> = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-slate-800">
           
           {/* Brand Logo Header */}
-          <div className="flex items-center shrink-0">
-            <img 
-              src={pestLogo} 
-              alt="Pest Free Services Logo" 
-              className="h-16 sm:h-20 w-auto bg-white p-1.5 rounded-xl shadow-md border border-emerald-400 object-contain"
-              onError={(e) => {
-                const target = e.currentTarget as HTMLImageElement;
-                if (!target.dataset.tried1) {
-                  target.dataset.tried1 = 'true';
-                  target.src = '/pest.png';
-                } else if (!target.dataset.tried2) {
-                  target.dataset.tried2 = 'true';
-                  target.src = '/images/pest.png';
-                } else if (!target.dataset.tried3) {
-                  target.dataset.tried3 = 'true';
-                  target.src = '/assets/images/pest.png';
-                }
-              }}
-            />
-
-            href="https://www.facebook.com/YOUR_PAGE_NAME"
+<div className="flex items-center gap-4 shrink-0">
+  <img 
+    src={pestLogo} 
+    alt="Pest Free Services Logo" 
+    className="h-16 sm:h-20 w-auto bg-white p-1.5 rounded-xl shadow-md border border-emerald-400 object-contain"
+    onError={(e) => {
+      const target = e.currentTarget as HTMLImageElement;
+      if (!target.dataset.tried1) {
+        target.dataset.tried1 = 'true';
+        target.src = '/pest.png';
+      } else if (!target.dataset.tried2) {
+        target.dataset.tried2 = 'true';
+        target.src = '/images/pest.png';
+      } else if (!target.dataset.tried3) {
+        target.dataset.tried3 = 'true';
+        target.src = '/assets/images/pest.png';
+      }
+    }}
+  />
+  
+    href="https://www.facebook.com/PestFreeServices"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Visit our Facebook page"
     className="flex items-center justify-center h-11 w-11 rounded-full bg-emerald-900 hover:bg-emerald-700 border border-emerald-500 transition-colors"
   >
-      <Facebook className="w-5 h-5 text-white" />
-            </a>
-          </div>
+    <Facebook className="w-5 h-5 text-white" />
+  </a>
+</div>
 
           {/* Location Section */}
           <div className="flex items-start gap-3 text-slate-300 max-w-md">

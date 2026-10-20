@@ -5,8 +5,11 @@ import { BUSINESS_INFO } from '../data/pestData';
 
 // WhatsApp number in international format (South Africa +27, no leading 0, no spaces)
 const WHATSAPP_NUMBER = '27827986705';
-const SESSION_KEY = 'pfs-urgent-popup-dismissed';
 const SHOW_DELAY_MS = 1500;
+
+// Lives in memory only, so it resets on every page load/refresh (popup shows on every visit)
+// but stops the popup re-opening when someone navigates back to Home within the same visit.
+let shownThisPageLoad = false;
 
 const QUICK_CONCERNS = [
   'Rats / mice in my home',
@@ -21,19 +24,16 @@ export const UrgentHelpPopup: React.FC = () => {
   const [message, setMessage] = useState('');
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  // Open automatically once per browser session, shortly after the page loads
+  // Open automatically on every page load, shortly after the site appears
   useEffect(() => {
-    let alreadyDismissed = false;
-    try {
-      alreadyDismissed = sessionStorage.getItem(SESSION_KEY) === '1';
-    } catch {
-      /* storage unavailable – fall through */
-    }
-    if (alreadyDismissed) {
+    if (shownThisPageLoad) {
       setDismissed(true);
       return;
     }
-    const t = setTimeout(() => setIsOpen(true), SHOW_DELAY_MS);
+    const t = setTimeout(() => {
+      shownThisPageLoad = true;
+      setIsOpen(true);
+    }, SHOW_DELAY_MS);
     return () => clearTimeout(t);
   }, []);
 
@@ -57,11 +57,6 @@ export const UrgentHelpPopup: React.FC = () => {
   const close = () => {
     setIsOpen(false);
     setDismissed(true);
-    try {
-      sessionStorage.setItem(SESSION_KEY, '1');
-    } catch {
-      /* ignore */
-    }
   };
 
   const sendToWhatsApp = (e?: React.FormEvent) => {

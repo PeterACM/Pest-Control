@@ -15,6 +15,7 @@ import { TestimonialsView } from './components/TestimonialsView';
 import { BlogView } from './components/BlogView';
 import { ContactView } from './components/ContactView';
 import { BookingModal } from './components/BookingModal';
+import { UrgentHelpPopup } from './components/UrgentHelpPopup';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageView>('home');
@@ -109,6 +110,9 @@ export default function App() {
         onNavigate={handleNavigate}
         onOpenBooking={() => handleOpenBooking()}
       />
+
+      {/* Urgent help popup (home page only) -> sends concern to WhatsApp */}
+      {currentPage === 'home' && <UrgentHelpPopup />}
 
       {/* Interactive Booking Modal */}
       <BookingModal
